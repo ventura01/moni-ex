@@ -13,7 +13,7 @@ const CustomBtn = ({title, containerStyles, handleClick, iconStyles}:CustomBtnPr
       className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
-      <span className={`flex-1`}>{title}</span> <ArrowDown size={32} className={`inline-block ${iconStyles}`} />
+      <span className={`flex-1`}>{title}</span> <ArrowDown size={18} className={`inline-block ${iconStyles}`} />
     </button>
   );
 };
