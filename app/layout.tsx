@@ -1,10 +1,13 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto_Condensed } from "next/font/google";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto_Condensed = Roboto_Condensed({
+  subsets: ["latin"],
+  weight: ["300","400","700"]
+});
 
 export const metadata: Metadata = {
   title: { template: "Moni | %s", default: "Moni" },
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={roboto_Condensed.className}>
         <Navbar />
         {children}
         <Footer />
