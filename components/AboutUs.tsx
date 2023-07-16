@@ -12,8 +12,8 @@ type Props = {};
 
 const AboutUs = (props: Props) => {
   return (
-    <section className="bg-zinc-800 py-20">
-      <h2 className="text-zinc-400 font-bold uppercase tracking-widest text-3xl text-center mb-12">
+    <section id="aboutus" className="bg-zinc-800 py-20">
+      <h2 className="text-zinc-200 font-bold uppercase tracking-widest text-3xl text-center mb-12">
         Acerca de Nosotros
       </h2>
       <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3">

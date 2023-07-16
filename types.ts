@@ -6,4 +6,5 @@ export interface CustomBtnProps {
   containerStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   iconStyles?: string;
+  btnType: "submit" | "button"
 }

@@ -7,7 +7,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav>
+    <nav className="hidden md:block">
       <div className="container max-w-screen-xl mx-auto flex justify-between py-5">
         <Image src="/logo.png" width={120} height={30} alt="logo" />
         <div className="flex gap-x-10 capitalize">
