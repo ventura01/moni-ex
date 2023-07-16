@@ -7,11 +7,11 @@ type Props = {};
 const Testimonials = (props: Props) => {
   return (
     <section id="testimonials" className="bg-zinc-500 py-20">
-      <div className="container max-w-screen-xl mx-auto">
+      <div className="container max-w-screen-xl px-3 md:px-0 mx-auto">
         <h2 className="uppercase tracking-widest text-center font-bold text-3xl text-zinc-900 mb-20">
           ¿Qué dicen nuestros clientes?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 md:gap-x-5">
+        <div className="grid grid-cols-1 md:grid-cols-4 md:gap-x-5 gap-y-16 md:gap-y-0">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}

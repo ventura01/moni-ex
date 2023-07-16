@@ -17,8 +17,8 @@ const AboutUs = (props: Props) => {
         Acerca de Nosotros
       </h2>
       <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3">
-        <div className="px-5">
-          <h3 className="text-zinc-300 font-bold text-2xl mb-5">
+        <div className="px-3 md:px-0 mb-10 md:mb-0">
+          <h3 className="text-zinc-300 font-semibold text-2xl mb-5">
             Nos dedicamos a hacer ahorrar a nuestros clientes
           </h3>
           <p className="text-zinc-400 font-light">
@@ -28,7 +28,7 @@ const AboutUs = (props: Props) => {
             porro atque iste esse qui modi molestiae? In, sit harum?
           </p>
         </div>
-        <div className="flex flex-col justify-between items-center gap-y-5">
+        <div className="flex flex-col justify-between items-center gap-y-5 mb-10 md:mb-0">
           <div className="flex flex-col items-center">
             <h3 className="text-zinc-300 font-bold text-lg">Rápido</h3>
             <div>

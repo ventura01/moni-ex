@@ -13,8 +13,8 @@ const year = new Date().getFullYear();
 const Footer = (props: Props) => {
   return (
     <footer id="info" className="bg-zinc-900 py-20">
-      <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3">
-        <div className="flex flex-col gap-y-5">
+      <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-y-0">
+        <div className="flex md:flex-col flex-col-reverse items-start gap-y-5 row-start-3 row-end-4 md:row-start-1 md:row-end-2">
           <div>
             <Image
               src="/logo-footer.png"
@@ -30,7 +30,7 @@ const Footer = (props: Props) => {
             <p>Managua, Nicaragua.</p>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center row-start-1 row-end-2 md:col-start-2 md:col-end-3">
           <div className="flex flex-col gap-y-5">
             {footerLinks.map((link) => (
               <div key={link.title}>
@@ -52,11 +52,11 @@ const Footer = (props: Props) => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-y-5">
-          <h4 className="font-bold text-zinc-400 text-right">
+        <div className="flex flex-col gap-y-5 row-start-2 row-end-3 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-2">
+          <h4 className="font-bold text-zinc-400 md:text-right text-center">
             Suscríbete y recibe Noticias y Actualizaciones
           </h4>
-          <div className="flex justify-end">
+          <div className="flex md:justify-end justify-center">
             <input
               type="email"
               name="email"
@@ -70,7 +70,7 @@ const Footer = (props: Props) => {
               btnType="submit"
             />
           </div>
-          <div className="flex gap-x-5 justify-end">
+          <div className="flex gap-x-5 md:justify-end justify-center">
             <div>
               <InstagramLogo size={32} className="fill-zinc-400 cursor-pointer" />
             </div>
