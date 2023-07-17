@@ -31,7 +31,7 @@ const Navbar = (props: Props) => {
           ref={menuRef}
           className={`${
             menuOpen
-              ? "absolute z-20 w-[90%] left-3 capitalize top-14 items-center rounded-md flex flex-col bg-zinc-900 text-zinc-100 py-10 gap-y-8"
+              ? "fixed z-20 w-[90%] left-3 capitalize top-14 items-center rounded-md flex flex-col bg-zinc-900 text-zinc-100 py-10 gap-y-8"
               : "hidden md:flex gap-x-10 capitalize"
           }`}
         >
@@ -45,20 +45,22 @@ const Navbar = (props: Props) => {
             </Link>
           ))}
         </div>
-        <div
-          className={`${
-            menuOpen &&
-            "fixed right-0 top-0 z-0 h-screen w-screen bg-gray-500 bg-opacity-25 backdrop-blur-sm md:hidden"
-          }`}
-        ></div>
-        <div className="md:hidden flex self-center">
-          <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? (
-              <XCircle size={24} />
-            ) : (
-              <DotsThreeCircleVertical size={24} />
-            )}
-          </button>
+        <div className="md:hidden">
+          <div
+            className={`${
+              menuOpen &&
+              "absolute right-0 top-0 z-0 h-screen w-screen bg-gray-500 bg-opacity-25 backdrop-blur-sm md:hidden"
+            }`}
+          ></div>
+          <div className="md:hidden flex self-center">
+            <button className="fixed right-6 z-20 bg-zinc-900 text-zinc-100 rounded-full py-2 px-2" onClick={() => setMenuOpen(!menuOpen)}>
+              {menuOpen ? (
+                <XCircle size={24} />
+              ) : (
+                <DotsThreeCircleVertical size={24} />
+              )}
+            </button>
+          </div>
         </div>
       </div>
     </nav>

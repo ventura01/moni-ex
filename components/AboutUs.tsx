@@ -12,7 +12,10 @@ type Props = {};
 
 const AboutUs = (props: Props) => {
   return (
-    <section id="aboutus" className="bg-zinc-800 py-20">
+    <section id="aboutus" className="bg-zinc-800 py-20 relative">
+      <h2 className="text-zinc-200/5 font-bold md:top-24 md:left-72 text-9xl absolute hidden md:block">
+        Nosotros
+      </h2>
       <h2 className="text-zinc-200 font-bold uppercase tracking-widest text-3xl text-center mb-12">
         Acerca de Nosotros
       </h2>
