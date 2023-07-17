@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
   return (
     <footer id="info" className="bg-zinc-900 py-20">
       <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-y-0">
-        <div className="flex md:flex-col flex-col-reverse items-start gap-y-5 row-start-3 row-end-4 md:row-start-1 md:row-end-2">
+        <div className="flex md:flex-col flex-col-reverse md:items-start items-center gap-y-5 row-start-3 row-end-4 md:row-start-1 md:row-end-2">
           <div>
             <Image
               src="/logo-footer.png"
@@ -72,7 +72,10 @@ const Footer = (props: Props) => {
           </div>
           <div className="flex gap-x-5 md:justify-end justify-center">
             <div>
-              <InstagramLogo size={32} className="fill-zinc-400 cursor-pointer" />
+              <InstagramLogo
+                size={32}
+                className="fill-zinc-400 cursor-pointer"
+              />
             </div>
             {/* <div>
               <TwitchLogo size={32} className="fill-zinc-400" />
