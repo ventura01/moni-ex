@@ -18,10 +18,10 @@ const AboutUs = (props: Props) => {
       </h2>
       <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3">
         <div className="px-3 md:px-0 mb-10 md:mb-0">
-          <h3 className="text-zinc-300 font-semibold text-2xl mb-5">
+          <h3 className="text-zinc-300 font-semibold text-2xl mb-5 text-justify md:text-left">
             Nos dedicamos a hacer ahorrar a nuestros clientes
           </h3>
-          <p className="text-zinc-400 font-light">
+          <p className="text-zinc-400 font-light text-justify md:text-left">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequatur animi nesciunt accusantium? Itaque ratione minima sed
             dolor dignissimos esse dolores hic aliquid quae dolorum! Cum rerum

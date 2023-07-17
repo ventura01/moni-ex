@@ -23,7 +23,7 @@ const Testimonials = (props: Props) => {
                   alt={testimonial.name}
                   width={120}
                   height={120}
-                  className="absolute right-1/2 top-0 w-20 -translate-y-1/2 translate-x-1/2 transform rounded-full border-4 border-zinc-200"
+                  className="absolute right-1/2 top-0 w-20 -translate-y-1/2 translate-x-1/2 transform rounded-full border-4 border-zinc-400"
                 />
               </div>
               <div className="flex h-full flex-col justify-between gap-y-5">
