@@ -1,7 +1,7 @@
 "use client";
 
 import { footerLinks } from "@/data";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { InstagramLogo, TwitterLogo, MetaLogo } from "@phosphor-icons/react";
@@ -12,18 +12,20 @@ const year = new Date().getFullYear();
 
 const Footer = (props: Props) => {
   return (
-    <footer id="info" className="bg-zinc-900 py-20">
+    <footer id="info" className="bg-[#082429] py-20">
       <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-y-0">
         <div className="flex md:flex-col flex-col-reverse md:items-start items-center gap-y-5 row-start-3 row-end-4 md:row-start-1 md:row-end-2">
           <div>
-            <Image
-              src="/logo-footer.png"
-              width={120}
-              height={120}
-              alt="logo-footer"
-            />
+            <Link href="/">
+              <img
+                src="/logo-footer.png"
+                width={120}
+                height={120}
+                alt="logo-footer"
+              />
+            </Link>
           </div>
-          <div className="text-xs font-semibold text-zinc-400 text-center md:text-start">
+          <div className="text-xs font-semibold text-white text-center md:text-start">
             <p>18530 Greenfelder Trail</p>
             <p>514.663.1470</p>
             <p>Ventura Inc</p>
@@ -34,7 +36,7 @@ const Footer = (props: Props) => {
           <div className="flex flex-col gap-y-5">
             {footerLinks.map((link) => (
               <div key={link.title}>
-                <h4 className="uppercase text-zinc-400 font-bold text-sm">
+                <h4 className="uppercase text-white font-bold text-sm">
                   {link.title}
                 </h4>
                 <div className="flex flex-col">
@@ -42,7 +44,7 @@ const Footer = (props: Props) => {
                     <Link
                       key={link.title}
                       href={link.url}
-                      className="text-sm text-zinc-500 capitalize cursor-pointer"
+                      className="text-sm text-white capitalize cursor-pointer"
                     >
                       {link.title}
                     </Link>
@@ -53,7 +55,7 @@ const Footer = (props: Props) => {
           </div>
         </div>
         <div className="flex flex-col gap-y-5 row-start-2 row-end-3 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-2">
-          <h4 className="font-bold text-zinc-400 md:text-right text-center">
+          <h4 className="font-bold text-white md:text-right text-center">
             Suscríbete y recibe Noticias y Actualizaciones
           </h4>
           <div className="flex md:justify-end justify-center">
@@ -72,19 +74,16 @@ const Footer = (props: Props) => {
           </div>
           <div className="flex gap-x-5 md:justify-end justify-center">
             <div>
-              <InstagramLogo
-                size={32}
-                className="fill-zinc-400 cursor-pointer"
-              />
+              <InstagramLogo size={32} className="fill-white cursor-pointer" />
             </div>
             {/* <div>
-              <TwitchLogo size={32} className="fill-zinc-400" />
+              <TwitchLogo size={32} className="fill-white" />
             </div> */}
             <div>
-              <TwitterLogo size={32} className="fill-zinc-400 cursor-pointer" />
+              <TwitterLogo size={32} className="fill-white cursor-pointer" />
             </div>
             <div>
-              <MetaLogo size={32} className="fill-zinc-400 cursor-pointer" />
+              <MetaLogo size={32} className="fill-white cursor-pointer" />
             </div>
           </div>
           <div>

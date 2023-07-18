@@ -11,15 +11,15 @@ const Hero = (props: Props) => {
   const handleScroll = () => {};
   return (
     <header className="hero flex items-center bg-[url('/images/hero-img-1.jpg')] bg-cover bg-center relative">
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/60 z-0" />
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-teal-950/70 z-0" />
       <div className="container max-w-screen-xl md:mx-auto flex md:justify-end z-10">
         <div className="flex flex-col md:justify-start md:w-2/4 gap-y-8 px-3 md:px-0">
           <h1 className="text-white md:text-6xl text-4xl text-center md:text-right uppercase font-bold">
-            Lorem ipsum dolor sit amet.
+            Cambio de divisas Rápido, Fácil y Seguro.
           </h1>
           <p className="text-white tracking-wider text-center md:text-right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            delectus impedit, sed voluptatem nostrum placeat quia ipsum a!
+            La primera plataforma de cambio de divisas donde realizas tus
+            transacciones en tiempo real en Nicaragua.
           </p>
           <div className="inline-block md:self-end self-center">
             <CustomBtn
