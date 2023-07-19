@@ -2,13 +2,21 @@
 
 import React from "react";
 import CustomBtn from "./CustomBtn";
-import { useState } from "react";
+import { useState, useRef } from "react";
 // import Image from "next/image";
 
 type Props = {};
 
 const Contact = (props: Props) => {
   const [state, setState] = useState<string>();
+  const [buttonDisabled, setButtonDisabled] = useState(true);
+  // ---------------
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  // ---------------
+  let formRef = useRef<HTMLFormElement | null>(null);
   const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     setState("loading");
@@ -16,6 +24,11 @@ const Contact = (props: Props) => {
       setState("ready");
       setTimeout(() => {
         setState("");
+        setButtonDisabled(true);
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setMessage("");
       }, 1500);
     }, 1500);
     // await fetch("/api/contactEmail", {
@@ -49,6 +62,8 @@ const Contact = (props: Props) => {
             action=""
             className="flex mx-auto md:w-[450px] sm:w-[320px] flex-col gap-y-5"
             onSubmit={handleSubmit}
+            ref={formRef}
+            id="contactForm"
           >
             <div className="flex flex-col">
               <label className="text-white" htmlFor="firstName">
@@ -60,6 +75,8 @@ const Contact = (props: Props) => {
                 id="firstName"
                 placeholder="Juan"
                 required
+                value={firstName}
+                onChange={(e) => setFirstName(e.currentTarget.value)}
               />
             </div>
             <div className="flex flex-col">
@@ -72,6 +89,8 @@ const Contact = (props: Props) => {
                 id="lastName"
                 placeholder="Perez A."
                 required
+                value={lastName}
+                onChange={(e) => setLastName(e.currentTarget.value)}
               />
             </div>
             <div className="flex flex-col">
@@ -84,6 +103,8 @@ const Contact = (props: Props) => {
                 id="email"
                 placeholder="juanpereza@correo.comm"
                 required
+                value={email}
+                onChange={(e) => setEmail(e.currentTarget.value)}
               />
             </div>
             <div className="flex flex-col">
@@ -96,6 +117,8 @@ const Contact = (props: Props) => {
                 cols={30}
                 rows={5}
                 placeholder="Escribe tu mensaje"
+                value={message}
+                onChange={(e) => setMessage(e.currentTarget.value)}
               ></textarea>
             </div>
             <div className="">
@@ -103,6 +126,7 @@ const Contact = (props: Props) => {
                 title="enviar"
                 containerStyles="bg-yellow-500 w-full rounded-sm hover:bg-yellow-400 text-white capitalize py-3"
                 btnType="submit"
+                disabled={buttonDisabled}
               />
             </div>
             {state === "loading" ? (

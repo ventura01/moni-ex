@@ -1,6 +1,7 @@
 export const navLinks = [
   { title: "inicio", url: "/" },
   { title: "acerca", url: "#aboutus" },
+  { title: "servicios", url: "#services" },
   { title: "contacto", url: "#contactus" },
   { title: "testimonios", url: "#testimonials" },
   { title: "blog", url: "/blog" },
@@ -15,6 +16,7 @@ export const footerLinks = [
       { title: "ayuda", url: "/" },
       { title: "blog", url: "/" },
       { title: "términos y condiciones", url: "/" },
+      { title: "política de privacidad", url: "/" },
     ],
   },
   {

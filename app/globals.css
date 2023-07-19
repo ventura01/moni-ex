@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth !important;
 }
 .hero {
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 54px);
 }
 /* .hero-text{
   height: calc(100vh - 109px);
