@@ -2,7 +2,7 @@ export const navLinks = [
   { title: "inicio", url: "/" },
   { title: "acerca", url: "#aboutus" },
   { title: "servicios", url: "#services" },
-  { title: "contacto", url: "#contactus" },
+  { title: "contacto", url: "/contact" },
   { title: "testimonios", url: "#testimonials" },
   // { title: "blog", url: "/blog" },
   // { title: "ayuda", url: "/help" },
@@ -24,6 +24,7 @@ export const footerLinks = [
     links: [
       { title: "eventos", url: "/" },
       { title: "socios comerciales", url: "/" },
+      { title: "historia", url: "/history" },
     ],
   },
 ];

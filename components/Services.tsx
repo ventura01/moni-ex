@@ -24,12 +24,10 @@ const Services = (props: Props) => {
             Nuestros Servicios
           </h3> */}
           <p className="text-teal-950 font-semibold text-justify md:text-left">
-            Bienvenido a Moni, tu plataforma confiable para realizar
-            conversiones de moneda de manera rápida y segura. Nuestra aplicación
-            ha sido diseñada pensando en tus necesidades para facilitar tus
-            transacciones internacionales y viajes al extranjero. Con Moni,
-            podrás aprovechar una serie de servicios y características
-            esenciales:
+            Nuestra aplicación ha sido diseñada para realizar conversiones de
+            moneda de manera rápida y segura pensando en tus necesidades para
+            facilitar tus transacciones de divisas. Con MONI, podrás aprovechar
+            una serie de servicios y características esenciales:
           </p>
           <br />
           <h4 className="text-teal-950 text-lg font-semibold">
@@ -59,7 +57,7 @@ const Services = (props: Props) => {
           </h4>
           {/* <br /> */}
           <p className="text-teal-700">
-            En Moni, la seguridad de tus datos personales y financieros es
+            En MONI, la seguridad de tus datos personales y financieros es
             nuestra máxima prioridad. Utilizamos las últimas tecnologías de
             encriptación para garantizar que tu información esté protegida en
             todo momento.
@@ -85,13 +83,7 @@ const Services = (props: Props) => {
             17:00 de Lunes a Viernes, para brindarte asistencia rápida y
             efectiva en caso de cualquier consulta o problema que puedas tener.
           </p>
-          <br />
-          <p className="text-teal-700">
-            Descarga Moni ahora y descubre la comodidad de cambiar moneda de
-            forma eficiente y segura. Facilitamos tus operaciones financieras
-            globales, brindándote la confianza que necesitas en cada paso del
-            camino.
-          </p>
+                    
         </div>
         <div className="flex flex-col md:flex-row justify-around items-center gap-y-10 md:gap-y-0 md:gap-x-5 mb-10 md:mb-0 ">
           <div className="flex flex-col items-center gap-y-3 px-3 md:px-0">

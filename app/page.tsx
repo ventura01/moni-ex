@@ -1,11 +1,11 @@
-import AboutUs from '@/components/AboutUs'
-import CTAsection from '@/components/CTAsection'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
-import Hero from '@/components/Hero'
-import Services from '@/components/Services'
-import Testimonials from '@/components/Testimonials'
-import Image from 'next/image'
+import AboutUs from "@/components/AboutUs";
+import CTAsection from "@/components/CTAsection";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,9 +13,8 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <Services />
-      <Contact />
       <Testimonials />
       <CTAsection />
     </main>
-  )
+  );
 }

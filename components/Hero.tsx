@@ -17,11 +17,11 @@ const Hero = (props: Props) => {
       <div className="container max-w-screen-xl md:mx-auto md:justify-end z-10 grid grid-cols-1 md:grid-cols-2 md:gap-y-0">
         <div className="flex flex-col md:justify-center gap-y-8 px-3 md:px-0 py-20 md:py-0">
           <h1 className="text-white md:text-6xl text-4xl text-center md:text-left uppercase font-bold">
-            Cambio de divisas Rápido, Fácil y Seguro.
+            cambia con confianza, obtén el mejor valor en cada transacción
           </h1>
           <p className="text-white tracking-wider text-center md:text-left">
-            La primera plataforma de cambio de divisas donde realizas tus
-            transacciones en tiempo real en Nicaragua.
+            La plataforma confiable para intercambiar moneda de manera rápida,
+            segura y eficiente.
           </p>
           <div className="inline-block md:self-start self-center">
             <CustomBtn

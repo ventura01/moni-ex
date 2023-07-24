@@ -25,7 +25,7 @@ const Navbar = (props: Props) => {
   }, []);
 
   return (
-    <nav className="md:block relative">
+    <nav id="home" className="md:block relative">
       <div className="md:container md:max-w-screen-xl md:mx-auto flex justify-between py-3 md:py-3 mx-3">
         <Link href="/">
           <img src="/logo.png" width={120} height={30} alt="logo" />
