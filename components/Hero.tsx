@@ -8,7 +8,9 @@ import CustomBtn from "./CustomBtn";
 type Props = {};
 
 const Hero = (props: Props) => {
-  const handleScroll = () => {};
+  const handleScroll = () => {
+    window.scrollTo({ top: 1640, left: 0 });
+  };
   return (
     <header className="hero flex items-center bg-[url('/images/hero-img-1.jpg')] bg-cover bg-center relative">
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-teal-950/70 z-0" />

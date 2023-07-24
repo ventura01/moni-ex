@@ -6,16 +6,16 @@ type Props = {};
 
 const Testimonials = (props: Props) => {
   return (
-    <section id="testimonials" className="py-20 bg-[#0f424b]">
+    <section id="testimonials" className="py-20">
       <div className="container max-w-screen-xl px-3 md:px-0 mx-auto">
-        <h2 className="uppercase tracking-widest text-center font-bold text-3xl text-white mb-20">
+        <h2 className="uppercase tracking-widest text-center font-bold text-3xl text-teal-950 mb-20">
           ¿Qué dicen nuestros clientes?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 md:gap-x-5 gap-y-16 md:gap-y-0">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="px-5 bg-white rounded-md pt-12 pb-10 relative"
+              className="px-5 bg-gray-100 shadow-md rounded-md pt-12 pb-10 relative border-gray-100"
             >
               <div className="">
                 <img
@@ -23,7 +23,7 @@ const Testimonials = (props: Props) => {
                   alt={testimonial.name}
                   width={120}
                   height={120}
-                  className="absolute right-1/2 top-0 w-20 -translate-y-1/2 translate-x-1/2 transform rounded-full border-4 border-white"
+                  className="absolute right-1/2 top-0 w-20 -translate-y-1/2 translate-x-1/2 transform rounded-full border-4 border-gray-100"
                 />
               </div>
               <div className="flex h-full flex-col justify-between gap-y-5">

@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { XCircle, DotsThreeCircleVertical } from "@phosphor-icons/react";
 import { navLinks } from "../data";
 import Link from "next/link";
+import CustomBtn from "./CustomBtn";
 // import Image from "next/image";
 
 type Props = {};
@@ -29,23 +30,36 @@ const Navbar = (props: Props) => {
         <Link href="/">
           <img src="/logo.png" width={120} height={30} alt="logo" />
         </Link>
-        <div
-          ref={menuRef}
-          className={`${
-            menuOpen
-              ? "fixed z-20 w-[90%] left-3 capitalize top-14 items-center rounded-md flex flex-col bg-gray-900 text-zinc-100 py-10 gap-y-8"
-              : "hidden md:flex gap-x-10 capitalize"
-          }`}
-        >
-          {navLinks.map((navLink) => (
-            <Link
-              onClick={() => setMenuOpen(false)}
-              href={navLink.url}
-              key={navLink.title}
-            >
-              {navLink.title}
-            </Link>
-          ))}
+        <div>
+          <div
+            ref={menuRef}
+            className={`${
+              menuOpen
+                ? "fixed z-20 w-[90%] left-3 capitalize top-14 items-center rounded-md flex flex-col bg-gray-900 text-zinc-100 py-10 gap-y-5"
+                : "hidden md:flex gap-x-5 capitalize"
+            }`}
+          >
+            {navLinks.map((navLink) => (
+              <Link
+                onClick={() => setMenuOpen(false)}
+                href={navLink.url}
+                key={navLink.title}
+                className="hover:bg-[#0d373f1a] py-1 px-4 md:text-[#0d373f] md:hover:text-[#347a88] text-white"
+              >
+                {navLink.title}
+              </Link>
+            ))}
+          <CustomBtn
+            title="Registro"
+            containerStyles="border border-yellow-500 rounded-md hover:bg-yellow-500 hover:text-white active:bg-yellow-700 md:text-[#0d373f] py-1 px-5"
+            btnType="subscribe"
+          />
+          <CustomBtn
+            title="Acceder"
+            containerStyles="border border-yellow-500 rounded-md hover:bg-transparent bg-yellow-500 hover:text-[#0d373f] active:bg-yellow-400 md:text-white py-1 px-5"
+            btnType="subscribe"
+          />
+          </div>
         </div>
         <div className="md:hidden">
           <div

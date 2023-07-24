@@ -1,4 +1,5 @@
 import AboutUs from '@/components/AboutUs'
+import CTAsection from '@/components/CTAsection'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Contact />
       <Testimonials />
+      <CTAsection />
     </main>
   )
 }

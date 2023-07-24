@@ -4,8 +4,8 @@ export const navLinks = [
   { title: "servicios", url: "#services" },
   { title: "contacto", url: "#contactus" },
   { title: "testimonios", url: "#testimonials" },
-  { title: "blog", url: "/blog" },
-  { title: "ayuda", url: "/help" },
+  // { title: "blog", url: "/blog" },
+  // { title: "ayuda", url: "/help" },
 ];
 
 export const footerLinks = [

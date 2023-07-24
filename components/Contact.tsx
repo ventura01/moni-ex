@@ -37,7 +37,7 @@ const Contact = (props: Props) => {
     // });
   };
   return (
-    <section id="contactus" className="py-20 px-3 bg-[#082429] sm:px-0 md:px-0">
+    <section id="contactus" className="py-20 px-3 bg-[#09272c] sm:px-0 md:px-0">
       <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2">
         <div className="md:flex align-middle row-start-2 row-end-3 md:col-start-1 md:col-end-2 hidden">
           <img
