@@ -12,11 +12,11 @@ export const footerLinks = [
   {
     title: "acerca",
     links: [
-      { title: "cómo funciona", url: "/" },
-      { title: "ayuda", url: "/" },
-      { title: "blog", url: "/" },
-      { title: "términos y condiciones", url: "/" },
-      { title: "política de privacidad", url: "/" },
+      { title: "preguntas frecuentes", url: "/faq" },
+      { title: "ayuda", url: "/help" },
+      { title: "blog", url: "/blog" },
+      { title: "términos y condiciones", url: "/terms" },
+      { title: "política de privacidad", url: "/privacy" },
     ],
   },
   {

@@ -1,11 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  ClockClockwise,
-  ShieldCheck,
-  CheckCircle,
-} from "@phosphor-icons/react";
+
 
 type Props = {};
 
@@ -85,35 +81,7 @@ const Services = (props: Props) => {
           </p>
                     
         </div>
-        <div className="flex flex-col md:flex-row justify-around items-center gap-y-10 md:gap-y-0 md:gap-x-5 mb-10 md:mb-0 ">
-          <div className="flex flex-col items-center gap-y-3 px-3 md:px-0">
-            <div>
-              <ClockClockwise size={60} className="text-teal-100" />
-            </div>
-            <h3 className="text-white font-bold text-lg">Rápido</h3>
-            <p className="text-center font-light text-white">
-              Minima sit libero veritatis dolores animi.
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-y-3 px-3 md:px-0">
-            <div>
-              <CheckCircle size={60} className="text-teal-100" />
-            </div>
-            <h3 className="text-white font-bold text-lg">Fácil</h3>
-            <p className="text-center font-light text-white">
-              Autem blanditiis aut eligendi quis officiis dolore et aliquam.
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-y-3 px-3 md:px-0">
-            <div>
-              <ShieldCheck size={60} className="text-teal-100" />
-            </div>
-            <h3 className="text-white font-bold text-lg">Seguro</h3>
-            <p className="text-center font-light text-white">
-              Laborum sapiente nesciunt dolor repellat qui.
-            </p>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

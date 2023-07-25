@@ -52,12 +52,12 @@ const Navbar = (props: Props) => {
           <CustomBtn
             title="Registro"
             containerStyles="border border-yellow-500 rounded-md hover:bg-yellow-500 hover:text-white active:bg-yellow-700 md:text-[#0d373f] py-1 px-5"
-            btnType="subscribe"
+            btnType="button"
           />
           <CustomBtn
             title="Acceder"
             containerStyles="border border-yellow-500 rounded-md hover:bg-transparent bg-yellow-500 hover:text-[#0d373f] active:bg-yellow-400 md:text-white py-1 px-5"
-            btnType="subscribe"
+            btnType="button"
           />
           </div>
         </div>

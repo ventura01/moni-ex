@@ -14,13 +14,13 @@ const Footer = (props: Props) => {
   return (
     <footer id="info" className="bg-teal-950 py-20">
       <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-y-0">
-        <div className="flex md:flex-col flex-col-reverse md:items-start items-center gap-y-5 row-start-3 row-end-4 md:row-start-1 md:row-end-2">
+        <div className="flex md:flex-col flex-col-reverse md:items-start items-center gap-y-5 md:gap-y-0 row-start-3 row-end-4 md:row-start-1 md:row-end-2">
           <div>
             <p className="text-xs font-thin text-white md:text-right text-center md:hidden block">
               All rights reserved &copy; {year}
             </p>
           </div>
-          <div>
+          <div className="md:mb-5 mb-0">
             <Link href="/">
               <img
                 src="/logo-footer.png"
@@ -30,7 +30,7 @@ const Footer = (props: Props) => {
               />
             </Link>
           </div>
-          <div className="text-xs font-semibold text-white text-center md:text-start">
+          <div className="text-xs font-semibold text-white text-center mb-10 md:mb-0 md:text-start">
             <p>18530 Greenfelder Trail</p>
             <p>514.663.1470</p>
             <p>Ventura Inc</p>

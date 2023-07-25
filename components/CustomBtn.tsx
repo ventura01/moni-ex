@@ -19,7 +19,8 @@ const CustomBtn = ({
       className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
-      <span className={`flex-1`}>{title}</span> {btnType === "button" && <ArrowDown size={18} className={`inline-block ${iconStyles}`} />}
+      {/* <span className={`flex-1`}>{title}</span> {btnType === "button" && <ArrowDown size={18} className={`inline-block ${iconStyles}`} />} */}
+      <span className={`flex-1`}>{title}</span>
     </button>
   );
 };

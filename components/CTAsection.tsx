@@ -13,12 +13,12 @@ const CTAsection = (props: Props) => {
       <div className="container max-w-screen-xl mx-auto py-20 grid grid-cols-1 md:grid-cols-2">
         <div className="px-3 md:px-0 md:pr-20">
           <p className="text-white uppercase text-3xl font-bold text-center md:text-left">
-            Descarga MONI ahora!
+            Descarga la app en tu móvil ahora!
           </p>
           <p className="text-white text-justify md:text-left mb-10 md:mb-0">
             Y descubre la comodidad de cambiar entre monedas de forma eficiente
-            y segura. Facilitamos tus operaciones financieras globales,
-            brindándote la confianza que necesitas en cada paso del camino.
+            y segura. Facilitamos tus operaciones financieras, brindándote la confianza que
+            necesitas en cada paso del camino.
           </p>
         </div>
         <div className="md:flex md:gap-y-10 items-center flex flex-col gap-y-10 ">

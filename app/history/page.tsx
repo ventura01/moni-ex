@@ -5,9 +5,9 @@ type Props = {};
 const History = (props: Props) => {
   return (
     <div className="md:w-[50%] px-3 md:px-0 mx-auto py-20">
-      <h4 className="text-lg font-semibold">Nuestra Historia</h4>
+      <h4 className="text-lg text-teal-950 font-semibold">Nuestra Historia</h4>
 
-      <p>
+      <p className="text-teal-700">
         Desde nuestro inicio en 2023, hemos trabajado arduamente para
         convertirnos en una de las principales opciones de intercambio de moneda
         para individuos y empresas en el país. Nuestro equipo está formado por
@@ -16,16 +16,16 @@ const History = (props: Props) => {
         clientes.
       </p>
       <br />
-      <h4 className="text-lg font-semibold">Nuestra Filosofía</h4>
+      <h4 className="text-lg text-teal-950 font-semibold">Nuestra Filosofía</h4>
 
-      <p>
+      <p className="text-teal-700">
         En MONI, creemos en la transparencia, la seguridad y la eficiencia.
         Valoramos la confianza que nuestros clientes depositan en nosotros y nos
         esforzamos por superar sus expectativas en cada interacción. Nuestra
         filosofía se centra en tres pilares fundamentales:
       </p>
 <br/>
-      <ul className="list-decimal">
+      <ul className="list-decimal text-teal-700">
         <li>
           <strong>Transparencia:</strong> Queremos que nuestros clientes tengan
           una experiencia clara y comprensible en cada etapa del proceso de
@@ -46,9 +46,9 @@ const History = (props: Props) => {
         </li>
       </ul>
       <br />
-      <h4 className="text-lg font-semibold">Por qué Elegirnos</h4>
+      <h4 className="text-lg text-teal-950 font-semibold">Por qué Elegirnos</h4>
 
-      <ul className="list-disc">
+      <ul className="list-disc text-teal-700">
         <li>
           <strong>Tarifas Competitivas:</strong> Ofrecemos tasas de cambio competitivas y SIN
           comisiones para que nuestros clientes obtengan el mejor valor en sus
@@ -70,7 +70,7 @@ const History = (props: Props) => {
         </li>
       </ul>
 
-      <p>
+      <p className="text-teal-700">
         En MONI, estamos comprometidos con la excelencia en el servicio y en
         ofrecer una experiencia confiable y satisfactoria para nuestros
         clientes. Siempre nos esforzamos por mejorar y adaptarnos a las
@@ -78,10 +78,10 @@ const History = (props: Props) => {
         mejor opción en intercambio de moneda.
       </p>
 
-      <p>¡Gracias por elegirnos para tus operaciones de cambio de divisas!</p>
-      <p>[Nombre del equipo o fundador/es]</p>
-      <p>MONI</p>
-      <p>[Fecha actualización o fundación]</p>
+      <p className="text-teal-700">¡Gracias por elegirnos para tus operaciones de cambio de divisas!</p>
+      <p className="text-teal-700">[Nombre del equipo o fundador/es]</p>
+      <p className="text-teal-700">MONI</p>
+      <p className="text-teal-700">[Fecha actualización o fundación]</p>
     </div>
   );
 };

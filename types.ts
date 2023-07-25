@@ -6,6 +6,6 @@ export interface CustomBtnProps {
   containerStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   iconStyles?: string;
-  btnType: "submit" | "button" | "subscribe";
+  btnType: "submit" | "button" ;
   disabled?: boolean;
 }
