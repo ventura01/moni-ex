@@ -4,6 +4,7 @@ const nextConfig = {
         domains: ["images.unsplash.com", "res.cloudinary.com", "cloudflare-ipfs.com"],
       },
       output: 'export',
+      trailingSlash: true,
 }
 
 module.exports = nextConfig

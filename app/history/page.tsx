@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = {};
 
 const History = (props: Props) => {
@@ -24,7 +22,7 @@ const History = (props: Props) => {
         esforzamos por superar sus expectativas en cada interacción. Nuestra
         filosofía se centra en tres pilares fundamentales:
       </p>
-<br/>
+      <br />
       <ul className="list-decimal text-teal-700">
         <li>
           <strong>Transparencia:</strong> Queremos que nuestros clientes tengan
@@ -50,23 +48,24 @@ const History = (props: Props) => {
 
       <ul className="list-disc text-teal-700">
         <li>
-          <strong>Tarifas Competitivas:</strong> Ofrecemos tasas de cambio competitivas y SIN
-          comisiones para que nuestros clientes obtengan el mejor valor en sus
-          operaciones de intercambio de moneda.
+          <strong>Tarifas Competitivas:</strong> Ofrecemos tasas de cambio
+          competitivas y SIN comisiones para que nuestros clientes obtengan el
+          mejor valor en sus operaciones de intercambio de moneda.
         </li>
         <li>
-          <strong>Facilidad de Uso:</strong> Nuestra plataforma intuitiva y amigable hace que el
-          proceso de cambio de divisas sea sencillo y accesible para todos.
+          <strong>Facilidad de Uso:</strong> Nuestra plataforma intuitiva y
+          amigable hace que el proceso de cambio de divisas sea sencillo y
+          accesible para todos.
         </li>
         <li>
-          <strong>Atención al Cliente de Calidad:</strong> Nuestro equipo de atención al cliente
-          está disponible para asistirte en cada paso del camino, brindando un
-          servicio personalizado y profesional.
+          <strong>Atención al Cliente de Calidad:</strong> Nuestro equipo de
+          atención al cliente está disponible para asistirte en cada paso del
+          camino, brindando un servicio personalizado y profesional.
         </li>
         <li>
-          <strong>Seguridad Garantizada:</strong> Implementamos medidas de seguridad de
-          vanguardia para asegurar que tus datos y transacciones estén
-          protegidos en todo momento.
+          <strong>Seguridad Garantizada:</strong> Implementamos medidas de
+          seguridad de vanguardia para asegurar que tus datos y transacciones
+          estén protegidos en todo momento.
         </li>
       </ul>
 
@@ -78,7 +77,9 @@ const History = (props: Props) => {
         mejor opción en intercambio de moneda.
       </p>
 
-      <p className="text-teal-700">¡Gracias por elegirnos para tus operaciones de cambio de divisas!</p>
+      <p className="text-teal-700">
+        ¡Gracias por elegirnos para tus operaciones de cambio de divisas!
+      </p>
       <p className="text-teal-700">[Nombre del equipo o fundador/es]</p>
       <p className="text-teal-700">MONI</p>
       <p className="text-teal-700">[Fecha actualización o fundación]</p>
