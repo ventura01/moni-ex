@@ -2,7 +2,6 @@
 
 import React from "react";
 
-
 type Props = {};
 
 const Services = (props: Props) => {
@@ -79,9 +78,16 @@ const Services = (props: Props) => {
             17:00 de Lunes a Viernes, para brindarte asistencia rápida y
             efectiva en caso de cualquier consulta o problema que puedas tener.
           </p>
-                    
         </div>
-        
+        <div className="flex items-center">
+          <img
+            src="/images/about-img.jpg"
+            alt="service-image"
+            width={600}
+            height={600}
+            className="object-center object-cover rounded-md"
+          />
+        </div>
       </div>
     </section>
   );

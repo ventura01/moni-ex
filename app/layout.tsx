@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto_Condensed } from "next/font/google";
-// import { ClerkProvider } from "@clerk/nextjs";
 import Footer from "@/components/Footer";
 
 const roboto_Condensed = Roboto_Condensed({
@@ -22,14 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // <ClerkProvider>
-      <html lang="es">
-        <body className={roboto_Condensed.className}>
-          <Navbar />
-          {children}
-          <Footer />
-        </body>
-      </html>
-    // </ClerkProvider>
+    <html lang="es">
+      <body className={roboto_Condensed.className}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }

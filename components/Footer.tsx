@@ -31,9 +31,9 @@ const Footer = (props: Props) => {
             </Link>
           </div>
           <div className="text-xs font-semibold text-white text-center mb-10 md:mb-0 md:text-start">
-            <p>18530 Greenfelder Trail</p>
-            <p>514.663.1470</p>
-            <p>Ventura Inc</p>
+            <p>14038 Villas Santa Fe No.19</p>
+            <p>(505) 2248 2386</p>
+            <p>Ventura Inc.</p>
             <p>Managua, Nicaragua.</p>
           </div>
         </div>

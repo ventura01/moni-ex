@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.23.1",
     "@phosphor-icons/react": "^2.0.10",
     "@react-email/components": "^0.0.7",
     "@types/node": "20.4.1",

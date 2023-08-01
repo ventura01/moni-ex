@@ -5,6 +5,8 @@ import { XCircle, DotsThreeCircleVertical } from "@phosphor-icons/react";
 import { navLinks } from "../data";
 import Link from "next/link";
 import CustomBtn from "./CustomBtn";
+// import { UserButton, useUser } from "@clerk/nextjs";
+
 // import Image from "next/image";
 
 type Props = {};
@@ -59,7 +61,6 @@ const Navbar = (props: Props) => {
               containerStyles="border border-yellow-500 rounded-md hover:bg-transparent bg-yellow-500 hover:text-[#0d373f] active:bg-yellow-400 md:text-white py-1 px-5"
               btnType="button"
             />
-            
           </div>
         </div>
         <div className="md:hidden">

@@ -51,7 +51,7 @@ const AboutUs = (props: Props) => {
 
         <div className="">
           <img
-            src="/images/about-img.jpg"
+            src="/images/aboutus-img.jpg"
             width={600}
             height={600}
             alt="about-img"
